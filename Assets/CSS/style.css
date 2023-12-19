@@ -1,0 +1,65 @@
+/* var declarations */
+:root {
+    --main-backgroundcolor: #edffc54d;
+    --header-size: 767px;
+    --footer-size: 767px;
+
+}
+
+/* global styling */
+* {
+    box-sizing: border-box;
+
+}
+
+/* Element referenced CSS */
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--main-backgroundcolor);
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+ul a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Class reference CSS */
+.main-header{
+    display: inline-flex;
+    padding: 15px;
+}
+
+/* ID referenced CSS */
+#heading-nav-bar{
+    float: right;
+    margin-right: 15px;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: right;
+    
+}
+
+#footer-nav-bar{
+    margin-right: 15px;
+    font-size: 14px;
+
+}
+
+
+/* screen size changes below value */
+/* @media screen and (max-width: 767px) {
+
+    #heading-nav-bar, 
+      #footer-nav-bar{
+        display: none;
+    }
+
+} */
