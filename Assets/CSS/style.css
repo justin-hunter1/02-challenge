@@ -1,50 +1,74 @@
 /* var declarations */
 :root {
     --main-backgroundcolor: #edffc54d;
-    --header-size: 767px;
-    --footer-size: 767px;
+    --header-background: ;
+    --footer-background: ;
+    --font: Cambria, Georgia, 'Times New Roman', serif;
 
 }
 
 /* global styling */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font)
 
 }
 
 /* Element referenced CSS */
 body {
-    padding: 0;
-    margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--main-backgroundcolor);
+    display: flex;
+
 }
 
 ul li{
-    display: inline-block;
+    display: block;
     list-style-type: none;
     margin-left: 20px;
 }
 
-ul a{
+a{
     text-decoration: none;
     color: #000000;
 }
 
 /* Class reference CSS */
 .main-header{
-    display: inline-flex;
+    display: block;
     padding: 15px;
+    
+}
+
+.l-column{
+    text-align: end;
+    border-right: 5px solid #000;
 }
 
 /* ID referenced CSS */
 #heading-nav-bar{
+    display: flex;
     float: right;
+    position: relative;
+
     margin-right: 15px;
     padding-top: 20px;
     font-size: 20px;
     text-align: right;
-    
+
+}
+
+#main-demo{
+    width: 500px;
+    height: 500px;
+
+}
+
+#demos{
+    width:200px;
+    height: 200px;
+
 }
 
 #footer-nav-bar{
