@@ -24,7 +24,6 @@ body {
 }
 
 ul li{
-    display: block;
     list-style-type: none;
     margin-left: 20px;
 }
@@ -36,12 +35,14 @@ a{
 
 /* Class reference CSS */
 .main-header{
-    display: block;
     padding: 15px;
-    
+    display: flex;
+    font-weight: bolder;
 }
 
 .l-column{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: bolder;
     text-align: end;
     border-right: 5px solid #000;
 }
