@@ -36,7 +36,7 @@ a{
 /* Class reference CSS */
 .main-header{
     padding: 15px;
-    display: flex;
+    display: inline-flex;
     font-weight: bolder;
 }
 
@@ -47,28 +47,33 @@ a{
     border-right: 5px solid #000;
 }
 
-/* ID referenced CSS */
-#heading-nav-bar{
-    display: flex;
-    float: right;
-    position: relative;
-
-    margin-right: 15px;
-    padding-top: 20px;
-    font-size: 20px;
-    text-align: right;
-
-}
-
-#main-demo{
+.main-demo{
     width: 500px;
     height: 500px;
 
 }
 
-#demos{
+.demos{
     width:200px;
     height: 200px;
+
+}
+
+.main-demo:hover,
+ .demos:hover {
+    color: #808080;
+}
+
+/* ID referenced CSS */
+#heading-nav-bar{
+    display: inline-flex;
+    flex: wrap;
+    float: right;
+    position: relative;
+    margin-right: 15px;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: right;
 
 }
 
@@ -80,11 +85,11 @@ a{
 
 
 /* screen size changes below value */
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     #heading-nav-bar, 
       #footer-nav-bar{
         display: none;
     }
 
-} */
+}
